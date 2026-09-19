@@ -9,6 +9,7 @@ buttons.forEach((button) => {
     cards.forEach((card) => {
       const show = filter === "all" || card.dataset.tags === filter;
       card.classList.toggle("is-hidden", !show);
+      card.toggleAttribute("hidden", !show);
     });
   });
 });

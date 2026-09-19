@@ -203,5 +203,6 @@ h2 {
 
 @media (max-width: 860px) {
   .proj, .achs, .stats, .about { grid-template-columns: 1fr; }
-  .nav-links a:not(.nav-cta) { display: none; }
+  .nav-inner { flex-wrap: wrap; padding: 8px 0; }
+  .nav-links { flex-wrap: wrap; justify-content: flex-end; }
 }
