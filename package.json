@@ -1,0 +1,10 @@
+{
+  "name": "aaryan-bondekar-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Aaryan Bondekar Portfolio",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --directory .",
+    "start": "python3 -m http.server 4173 --directory ."
+  }
+}

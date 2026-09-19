@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaryan Bondekar Portfolio</title>
+  <meta name="description" content="Aaryan Bondekar Portfolio — CSE, IIT Guwahati. Data science, software, and product work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600;650&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        Aaryan Bondekar
+        <small>Portfolio</small>
+      </a>
+      <nav class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="mailto:b.aaryan@iitg.ac.in">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">Aaryan Bondekar Portfolio</p>
+        <h1>Building systems that make a metric honest.</h1>
+        <p class="lede">
+          Third-year CSE at IIT Guwahati. I intern on retrieval and recommenders,
+          internal InfoSec tooling, and quote-to-cash product work — then ship the
+          notebooks, kernels, and dashboards around them.
+        </p>
+        <div class="meta-row">
+          <span class="pill">B.Tech CSE · IIT Guwahati</span>
+          <span class="pill">Pune / Mumbai / Guwahati</span>
+          <span class="pill">Open for internships</span>
+        </div>
+        <div class="actions" style="margin-top: 22px">
+          <a class="btn-dark" href="https://github.com/Aardy-Bond" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn-line" href="https://www.linkedin.com/in/aaryanbondekar" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn-line" href="mailto:aardybondekar@gmail.com">aardybondekar@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid stats">
+        <article class="card stat"><b>15 min → 3 s</b><span>CRISIL · time-to-insight</span></article>
+        <article class="card stat"><b>+34% attach</b><span>Add Spirits · 900+ SKUs</span></article>
+        <article class="card stat"><b>0.88 / 0.19</b><span>ISRO fire · val acc / IoU</span></article>
+        <article class="card stat"><b>F1 0.44</b><span>SBI default · threshold 0.6</span></article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Work</p>
+            <h2>Internships</h2>
+          </div>
+          <p>Three roles, two companies. Add Spirits is two internships — data science and product — not one title told twice.</p>
+        </div>
+        <div class="grid exp">
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <h3>CRISIL</h3>
+                <div class="role">InfoSec Intern · Mumbai, onsite</div>
+              </div>
+              <div class="when">May 2026 – Jul 2026</div>
+            </div>
+            <ul>
+              <li>Turned a 15 min/query VAPT Excel bottleneck into CrisIntel — natural-language analytics on pandas / SQLite.</li>
+              <li>Cut insight time from 15 minutes to about 3 seconds with LangChain Text-to-SQL and 1–2 call vLLM chains.</li>
+              <li>Shipped Plotly / Streamlit severity and SLA dashboards for InfoSec triage.</li>
+              <li>Cleared TPRM with MSAL / Graph API RBAC and read-only SQL guards — no public SaaS LLM.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <h3>ADD SPIRITS</h3>
+                <div class="role">Data Science Intern · Pune, hybrid</div>
+              </div>
+              <div class="when">May 2025 – Jul 2026</div>
+            </div>
+            <ul>
+              <li>Indexed 1,200+ AV manuals, data sheets, and compatibility matrices in FAISS — lookup time down 62%.</li>
+              <li>Built an LLM bundle-synthesis layer over retrieved specs: display/audio pitches in 90s vs a 2-day turnaround.</li>
+              <li>Shipped a PyTorch recommender across 900+ SKUs, auto-matching projectors to control units — attach +34%.</li>
+              <li>Streamed clicks through Kafka into a re-ranking layer under 300 ms, cutting gaps 41%.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <h3>ADD SPIRITS</h3>
+                <div class="role">Product Management Intern · Pune, hybrid</div>
+              </div>
+              <div class="when">Nov 2025 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Interviewed 15+ producers, crew, and ops into a ranked pain-point register — turnaround 2 days → 4 hours.</li>
+              <li>Instrumented quote-to-cash in SQL and Power BI; per-event P&amp;L surfaced ₹8L+ unbilled creep.</li>
+              <li>Prioritized OCR invoice parsing over 4 competing asks and owned rollout to 92% adoption in 6 weeks.</li>
+              <li>Diagnosed attach across 900+ SKUs and shipped a FAISS / PyTorch / Kafka engine — attach +34%.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Selected work</p>
+            <h2>Projects</h2>
+          </div>
+          <div class="chips" id="filters">
+            <button class="chip is-on" data-filter="all">All</button>
+            <button class="chip" data-filter="ds">Data</button>
+            <button class="chip" data-filter="sde">Systems</button>
+            <button class="chip" data-filter="pa">Product</button>
+          </div>
+        </div>
+        <div class="grid proj" id="project-grid">
+          <article class="card" data-tags="ds">
+            <div class="card-top">
+              <h3>Anubhuti</h3>
+              <span class="tag">Pocket FM · 2026</span>
+            </div>
+            <p>AI writers’ room for serialized audio drama. Branching fact ledger, 4-layer hazard pipeline, 173 offline tests, 60s TTS previews.</p>
+            <div class="card-links">
+              <a href="https://onetotwo.streamlit.app" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/Aardy-Bond/ZeroToOne" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card" data-tags="ds">
+            <div class="card-top">
+              <h3>Forest fire prediction</h3>
+              <span class="tag">ISRO BAH · 2026</span>
+            </div>
+            <p>PyTorch U-Net + LSTM-CNN on 13-band 30 m ERA5 / VIIRS / Sentinel-2 stacks. Val acc 0.88, IoU 0.19, 1–12 h cellular automata.</p>
+            <div class="card-links">
+              <a href="https://isro-bah-26-forest-fire.vercel.app" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/Aardy-Bond/ISRO_BAH-26" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card" data-tags="ds">
+            <div class="card-top">
+              <h3>Credit default risk</h3>
+              <span class="tag">SBI PSB · 2025</span>
+            </div>
+            <p>XGBoost on ~11% defaulters, class weights, 12-month features, threshold 0.6. F1 0.44, AUPRC 0.45, recall 0.61.</p>
+            <div class="card-links">
+              <a href="https://github.com/Aardy-Bond/fraud-detection-strategy" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card" data-tags="sde">
+            <div class="card-top">
+              <h3>CarbonX</h3>
+              <span class="tag">Kriti Gold · 2025</span>
+            </div>
+            <p>IoT meters → Ethereum → IPFS. ZK-SNARK verified trades on a React dApp; soul-bound NFTs for source-traceable credits.</p>
+            <div class="card-links">
+              <a href="https://carbonx-alpha.vercel.app" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/sgcodes7471/EnergyChain" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card" data-tags="sde">
+            <div class="card-top">
+              <h3>xv6 kernel</h3>
+              <span class="tag">OS lab · 2026</span>
+            </div>
+            <p>SJF / Hybrid schedulers, kernel threads with xchg spinlocks (6000 shared balance), lazy 4 KB paging and swap at a 4 MB cap.</p>
+            <div class="card-links">
+              <a href="https://github.com/Aardy-Bond/CS343-xv6" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card" data-tags="sde">
+            <div class="card-top">
+              <h3>News-to-order bot</h3>
+              <span class="tag">FEC · 2025</span>
+            </div>
+            <p>FinBERT + Gemini on Kite. Headline sentiment to a React order dashboard for short-term news moves.</p>
+            <div class="card-links">
+              <a href="https://ai-powered-automated-trading-bot-8m.vercel.app" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/Aardy-Bond/AI-Powered-Automated-Trading-Bot" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card" data-tags="pa">
+            <div class="card-top">
+              <h3>RideShare</h3>
+              <span class="tag">Startup · 2025</span>
+            </div>
+            <p>Campus cab pooling. Validated with 300+ respondents; site and GTM for signups, drivers, and citywide cab groups.</p>
+            <div class="card-links">
+              <a href="https://rideshare-delta-eight.vercel.app" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+          <article class="card" data-tags="pa">
+            <div class="card-top">
+              <h3>Arthik Saathi</h3>
+              <span class="tag">E-Cell · 2025</span>
+            </div>
+            <p>Tier-2/3 digital-finance case. 1000+ users, PAN-KYC and vernacular as must-haves, GTM against a 450M underserved TAM.</p>
+            <div class="card-links">
+              <a href="https://drive.google.com/drive/folders/1VvymnOsTCsaGuRMnU_aqOvb5VpgWpPUp" target="_blank" rel="noreferrer">Deck</a>
+            </div>
+          </article>
+          <article class="card" data-tags="pa">
+            <div class="card-top">
+              <h3>Urban retail inventory</h3>
+              <span class="tag">CnA · 2026</span>
+            </div>
+            <p>110k store–SKU days, missing-date calendar fill, ROP = ADU × seasonal lead time. Tableau on ₹53.9 Cr sales.</p>
+            <div class="card-links">
+              <a href="https://github.com/Aardy-Bond/urban-retail-inventory-analytics" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Elsewhere</p>
+            <h2>Achievements</h2>
+          </div>
+        </div>
+        <div class="grid achs">
+          <article class="card ach"><h3>Goldman Sachs Possibilities</h3><p>Top 60 of 7,000+ for the offline summit finale.</p></article>
+          <article class="card ach"><h3>Inter-IIT Tech Meet 14.0</h3><p>4th, Ebullient Quant High Prep, IIT Guwahati.</p></article>
+          <article class="card ach"><h3>Pocket FM hackathon</h3><p>Top 50 of 1,728 teams — national finalist, IIM Bangalore.</p></article>
+          <article class="card ach"><h3>Creative Shock</h3><p>Global Top 10 of 2,500+ teams across 30+ countries.</p></article>
+          <article class="card ach"><h3>Kriti 2025</h3><p>Gold, DeFi and Blockchain problem statement.</p></article>
+          <article class="card ach"><h3>GraphXplore</h3><p>National Rank 2, The Graph Protocol hackathon.</p></article>
+          <article class="card ach"><h3>Product Alchemy</h3><p>4th, product management competition, IIM Calcutta.</p></article>
+          <article class="card ach"><h3>NTSE</h3><p>Rank 8 among 94,000+ candidates, Maharashtra, 2020.</p></article>
+          <article class="card ach"><h3>Alcheringa</h3><p>Head of Security Affairs — 200+ team, 120+ events.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <article class="card">
+          <p class="kicker">About</p>
+          <h2>CSE, IIT Guwahati</h2>
+          <p>
+            I like problems where the obvious metric is a trap — fire accuracy without IoU,
+            a “retention” curve with no listeners, an Excel pivot that looks like analysis.
+            DeFi and Blockchain Head at the Finance and Economics Club. Coursework in DSA,
+            OS, DBMS, ML, and computer vision.
+          </p>
+          <p>
+            <strong>Phone</strong> +91 95526 86684<br />
+            <strong>College</strong> b.aaryan@iitg.ac.in<br />
+            <strong>Personal</strong> aardybondekar@gmail.com
+          </p>
+        </article>
+        <article class="card">
+          <p class="kicker">Stack</p>
+          <h2>Skills I use</h2>
+          <div class="skills">
+            <span>Python</span><span>C / C++</span><span>PyTorch</span><span>XGBoost</span>
+            <span>pandas</span><span>SQL</span><span>FAISS</span><span>LangChain</span>
+            <span>React</span><span>Streamlit</span><span>Kafka</span><span>Power BI</span>
+            <span>Tableau</span><span>Git</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>Aaryan Bondekar Portfolio · IIT Guwahati</div>
+      <div>
+        <a href="https://github.com/Aardy-Bond">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/aaryanbondekar">LinkedIn</a> ·
+        <a href="mailto:b.aaryan@iitg.ac.in">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
